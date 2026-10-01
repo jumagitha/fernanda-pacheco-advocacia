@@ -1,6 +1,6 @@
-# Site de Advocacia
+# Fernanda Pacheco Advocacia
 
-Projeto do site profissional de advocacia.
+Projeto do site profissional **Fernanda Pacheco Advocacia**.
 
 Objetivo inicial:
 - apresentar atuação jurídica com foco claro;
@@ -16,3 +16,6 @@ Objetivo inicial:
 Região de atuação pretendida:
 - Entorno do DF/GO, com foco especial em Novo Gama, Cidade Ocidental, Céu Azul e Luziânia;
 - Brasília/DF como atuação complementar.
+
+
+Nome profissional: Fernanda Pacheco Advocacia

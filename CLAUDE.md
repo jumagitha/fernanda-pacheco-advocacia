@@ -1,5 +1,8 @@
 # Instruções do projeto — Site de Advocacia
 
+## Nome profissional
+Fernanda Pacheco Advocacia
+
 ## Objetivo
 Criar um site profissional de advocacia com identidade clara, boa experiência mobile, SEO local e páginas específicas por área de atuação.
 
