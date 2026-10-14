@@ -1,0 +1,79 @@
+/* Fernanda Pacheco Advocacia — componentes (classes fp-*) sobre os tokens */
+.fp, .fp * { box-sizing: border-box; }
+.fp { background: var(--fundo); color: var(--texto); font-family: var(--font-interface); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.fp-alt { background: var(--fundo-alt); }
+
+/* Botões */
+.fp-btn { white-space: nowrap; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: var(--raio-1); font-family: var(--font-interface); font-size: 15px; font-weight: 600; letter-spacing: .01em; line-height: 20px; text-decoration: none; cursor: pointer; border: 1px solid var(--borda-chamada); transition: background-color .2s ease, color .2s ease; }
+.fp-btn:focus-visible { outline: 2px solid var(--foco); outline-offset: 2px; }
+.fp-btn--primario { background: var(--chamada); color: var(--sobre-chamada); }
+.fp-btn--primario:hover { background: #6a0a1e; }
+.fp-btn--secundario { background: transparent; color: var(--texto); }
+.fp-btn--secundario:hover { background: var(--fundo-alt); }
+.fp-btn--link { border: 0; padding: 0; min-height: 0; background: none; color: var(--texto); border-bottom: 1px solid var(--detalhe); border-radius: 0; padding-bottom: 4px; }
+.fp-seta { font-family: var(--font-interface); font-weight: 400; }
+
+/* Sobretítulo e títulos */
+.fp-sobretitulo { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font-interface); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--dourado-texto); margin: 0; }
+.fp-sobretitulo::after { content: ""; width: 32px; height: 1px; background: var(--detalhe); }
+.fp-display { font-family: var(--font-editorial); font-weight: 500; font-size: 76px; line-height: 1; letter-spacing: -.01em; margin: 0; }
+.fp-h1 { font-family: var(--font-editorial); font-weight: 500; font-size: 60px; line-height: 1.05; margin: 0; }
+.fp-h2 { font-family: var(--font-editorial); font-weight: 500; font-size: 42px; line-height: 1.1; margin: 0; }
+.fp-h3 { font-family: var(--font-interface); font-weight: 600; font-size: 22px; line-height: 1.3; margin: 0; }
+.fp-corpo-grande { font-size: 19px; line-height: 1.6; color: var(--texto-suave); max-width: var(--largura-texto); margin: 0; }
+.fp-corpo { font-size: 17px; line-height: 1.65; color: var(--texto-suave); max-width: var(--largura-texto); margin: 0; }
+.fp-pequeno { font-size: 14px; line-height: 1.5; color: var(--texto-suave); margin: 0; }
+.fp-citacao { font-family: var(--font-editorial); font-style: italic; font-size: 28px; line-height: 1.35; margin: 0; }
+.fp-numero { font-variant-numeric: lining-nums; font-family: var(--font-editorial); font-size: 48px; line-height: 1; color: var(--detalhe); }
+.fp-titulo-secao { display: grid; gap: var(--espaco-3); max-width: 720px; }
+
+/* Cabeçalho */
+.fp-cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 20px var(--espaco-6); border-bottom: 1px solid var(--linha); background: var(--fundo); }
+.fp-cabecalho__logo { height: 44px; width: auto; display: block; }
+.fp-cabecalho__nav { display: flex; gap: 28px; white-space: nowrap; align-items: center; }
+.fp-cabecalho__nav a { font-size: 15px; font-weight: 500; color: var(--texto); text-decoration: none; padding: 6px 0; border-bottom: 1px solid transparent; }
+.fp-cabecalho__nav a:hover, .fp-cabecalho__nav a[aria-current] { border-bottom-color: var(--detalhe); }
+
+/* Hero */
+.fp-hero { position: relative; padding: var(--espaco-8) var(--espaco-6); overflow: hidden; }
+.fp-hero__conteudo { position: relative; display: grid; gap: var(--espaco-4); max-width: 820px; }
+.fp-hero__acoes { display: flex; gap: var(--espaco-4); align-items: center; flex-wrap: wrap; margin-top: var(--espaco-3); }
+.fp-hero__marca { position: absolute; right: -40px; top: 50%; transform: translateY(-50%); height: 120%; opacity: .07; pointer-events: none; }
+
+/* Card de atuação */
+.fp-atuacoes { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--linha); }
+.fp-atuacao { display: grid; gap: var(--espaco-3); align-content: start; padding: var(--espaco-5) var(--espaco-5) var(--espaco-5) 0; border-right: 1px solid var(--linha); }
+.fp-atuacao + .fp-atuacao { padding-left: var(--espaco-5); }
+.fp-atuacao:last-child { border-right: 0; }
+.fp-atuacao .fp-btn--link { justify-self: start; margin-top: var(--espaco-2); }
+
+/* Linha de serviço */
+.fp-linhas { display: grid; }
+.fp-linha { display: grid; grid-template-columns: 56px 1fr auto; align-items: center; gap: var(--espaco-4); padding: var(--espaco-4) 0; border-bottom: 1px solid var(--linha); color: var(--texto); text-decoration: none; }
+.fp-linha:first-child { border-top: 1px solid var(--linha); }
+.fp-linha__num { font-variant-numeric: lining-nums; font-family: var(--font-editorial); font-size: 28px; color: var(--detalhe); }
+.fp-linha__titulo { font-weight: 600; font-size: 17px; }
+.fp-linha__desc { display: block; font-size: 14px; color: var(--texto-suave); font-weight: 400; }
+.fp-linha__seta { font-size: 22px; color: var(--detalhe); transition: transform .2s ease; }
+.fp-linha:hover .fp-linha__seta { transform: translateX(4px); }
+
+/* Localidades */
+.fp-locais { display: flex; flex-wrap: wrap; gap: var(--espaco-2); list-style: none; padding: 0; margin: 0; }
+.fp-local { padding: 8px 16px; border: 1px solid var(--linha); font-size: 14px; color: var(--texto); border-radius: var(--raio-1); }
+
+/* Bloco de contato */
+.fp-contato { display: grid; grid-template-columns: auto 1fr; gap: var(--espaco-6); align-items: center; padding: var(--espaco-6); }
+.fp-contato__logo { height: 120px; width: auto; }
+.fp-contato__dados { display: grid; gap: var(--espaco-2); border-left: 1px solid var(--detalhe); padding-left: var(--espaco-5); list-style: none; margin: 0; }
+.fp-contato__dados li { font-size: 15px; color: var(--texto); }
+.fp-contato__dados span { display: inline-block; min-width: 92px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--dourado-texto); }
+.fp-pendente { color: var(--texto-suave); font-style: italic; }
+
+@media (max-width: 720px) {
+  .fp-display { font-size: 44px; } .fp-h1 { font-size: 40px; } .fp-h2 { font-size: 32px; }
+  .fp-atuacoes { grid-template-columns: 1fr; }
+  .fp-atuacao, .fp-atuacao + .fp-atuacao { padding: var(--espaco-4) 0; border-right: 0; border-bottom: 1px solid var(--linha); }
+  .fp-cabecalho { padding: 16px var(--espaco-4); } .fp-cabecalho__nav { display: none; }
+  .fp-hero { padding: var(--espaco-6) var(--espaco-4); }
+  .fp-contato { grid-template-columns: 1fr; padding: var(--espaco-5) var(--espaco-4); }
+}

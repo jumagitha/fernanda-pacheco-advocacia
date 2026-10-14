@@ -1,0 +1,5 @@
+# Arquivos que nao vao para o GitHub
+*.zip
+.DS_Store
+node_modules/
+.env*

@@ -1,0 +1,33 @@
+KIT DE LOGO — FERNANDA PACHECO ADVOCACIA
+Gerado em 13/10/2026
+
+O monograma FP foi redesenhado em vetor a partir da imagem original (curvas limpas,
+sem serrilhado), e o nome foi composto em Bodoni Moda (fonte de licença livre OFL),
+já convertida em curvas: os arquivos abrem iguais em qualquer computador, sem instalar fonte.
+
+QUAL ARQUIVO USAR
+
+01_SVG_vetor ............ Arquivo-mestre. Site, Canva, Figma, Illustrator. Amplia sem perder qualidade.
+02_PNG_fundo_transparente  Word, PowerPoint, Canva, documentos. Escolha a pasta da cor e o tamanho.
+                            - vertical:   logo completa (monograma em cima, nome embaixo)
+                            - horizontal: monograma ao lado do nome (cabeçalho, site, e-mail)
+                            - monograma:  só o FP (perfil, carimbo, detalhes)
+03_favicon_e_icones_site  Ícone da aba do navegador e do celular. Copie tudo para a raiz do site
+                            e cole no <head> o conteúdo de COLAR_NO_HEAD_DO_SITE.html.
+04_marca_dagua ........... - folha A4 300 dpi: fundo de papel timbrado / petições
+                            - monograma cinza: documentos brancos (já vem bem clarinho)
+                            - logo branca: proteger fotos
+                            No Word: Inserir > Imagem > Quebra de texto "Atrás do texto".
+05_redes_sociais_e_assinatura  Perfil 1080, post, stories, capa LinkedIn, imagem de
+                            compartilhamento do site (1200x630) e assinatura de e-mail.
+06_PDF_vetor_para_grafica  Enviar para gráfica (cartão, papel timbrado, placa, adesivo).
+07_guia_de_uso ........... Resumo de versões, cores, tamanhos mínimos e regras.
+
+QUAL COR USAR
+Fundo escuro  -> principal-fundo-escuro, dourado, offwhite ou branco
+Fundo claro   -> principal-fundo-claro, grafite ou bordô
+Uma cor só    -> preto (carimbo, fax, gravação), grafite ou dourado
+
+CORES
+Grafite #2D2D2D | Dourado fosco #C4A484 | Off-white #F6F4EF | Bege quente #D9D4CC | Bordô #540516
+O CMYK do guia é aproximado: peça prova de cor à gráfica.
