@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Tokens da marca — espelham 03_DESIGN_SYSTEM/tokens.json */
+@theme {
+  --color-grafite: #2d2d2d;
+  --color-grafite-profundo: #242322;
+  --color-offwhite: #f6f4ef;
+  --color-dourado: #c4a484;
+  --color-dourado-texto: #7d5e3f;
+  --color-dourado-escuro: #5e4630;
+  --color-bege: #d9d4cc;
+  --color-bege-escuro: #b9b2a8;
+  --color-bordo: #540516;
+  --color-bordo-hover: #6a0a1e;
+  --color-suave: #5e5953;
+  --color-tinta-suave: #4a4744;
+  --color-linha-escura: #4a4744;
+
+  --font-editorial: var(--font-cormorant), "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: var(--font-inter), Inter, "Helvetica Neue", Arial, sans-serif;
+
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    to { background-position: 0% 0%; }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-grafite);
+    color: var(--color-offwhite);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  .num { font-variant-numeric: lining-nums; }
+  :focus-visible { outline: 2px solid var(--color-dourado); outline-offset: 3px; }
+  .claro :focus-visible { outline-color: var(--color-bordo); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  }
+}
+
+/* Sobretítulo com filete dourado */
+@utility sobretitulo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
